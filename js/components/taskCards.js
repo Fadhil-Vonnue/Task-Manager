@@ -108,8 +108,12 @@ export function createCard(details) {
     let count = 0;
     button.addEventListener("click", (e) => {
         count++;
-        document.querySelector(".task-status-text").textContent = "Completed";
-        document.querySelector(".task-status-text").style.color = "#009966";
+        e.currentTarget.parentElement.parentElement.querySelector(
+            ".task-status-text"
+        ).textContent = "Completed";
+        e.currentTarget.parentElement.parentElement.querySelector(
+            ".task-status-text"
+        ).style.color = "#009966";
         if (count == 1) {
             const completed = document.querySelector(
                 ".task-completed .dashboard-stat"
