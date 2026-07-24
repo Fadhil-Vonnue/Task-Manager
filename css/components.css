@@ -1,0 +1,361 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.page-title {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    width: 100%;
+}
+.page-tagline {
+    color: #7a7060;
+    width: 100%;
+}
+.empty-container {
+    width: 100%;
+    height: 16px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #0f0f141f;
+    padding: 16px;
+    background-color: #ffffff;
+    width: calc((100% / 3) - 12px);
+}
+.dashboard {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.dashboard .dashboard-card {
+    padding: 12px 16px;
+}
+.dashboard-stat {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-size: 24px;
+    font-style: medium;
+}
+.dashboard-progress {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #7a7060;
+    font-style: medium;
+}
+.task-pending .dashboard-stat {
+    color: #e17100;
+}
+
+.task-completed .dashboard-stat {
+    color: #009966;
+}
+.button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 6px;
+    gap: 8px;
+    border: none;
+    justify-content: center;
+}
+.addTask {
+    align-self: flex-start;
+}
+.task-container {
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.task-card {
+    gap: 12px;
+}
+.task-top {
+    gap: 8px;
+    justify-content: space-between;
+}
+.assign {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+}
+.detail:nth-child(2) .assign {
+    font-weight: 400;
+    color: #7a7060;
+}
+.pending {
+    color: #e17100;
+}
+.complete {
+    color: #009966;
+}
+.completed {
+    border: 1px solid #a4f4cf !important;
+    background: none;
+}
+.completed .complete-button {
+    background: #d0fae5;
+    color: #009966;
+}
+.completed .complete-button svg path {
+    stroke: #009966;
+}
+.required {
+    color: #dc2626;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+}
+.formInstructions {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #7a7060;
+}
+.medium {
+    border: 1px solid #fee685;
+}
+.medium svg path {
+    fill: #fe9a00;
+}
+.medium .task-priority-text {
+    color: #bb4d00;
+}
+.low {
+    border: 1px solid #a4f4cf;
+    background-color: #ecfdf5;
+}
+.low svg path {
+    fill: #00bc7d;
+}
+.low .task-priority-text {
+    color: #007a55;
+}
+.high {
+    border: 1px solid #ffccd3;
+    background-color: #fff1f2;
+}
+.high svg path {
+    fill: #ff2056;
+}
+.high .task-priority-text {
+    color: #c70036;
+}
+.red-border {
+    border-color: #dc2626 !important;
+}
+.card {
+    width: calc((100% / 3) - 8px);
+}
+.no-of-tasks {
+    font-family: "DM Mono";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #7a7060;
+}
+.your-task {
+    font-family: "DM Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.all-tasks {
+    display: flex;
+    justify-content: space-between;
+}
+.task-title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: 19.25px;
+    letter-spacing: 0px;
+}
+.task-priority {
+    gap: 4px;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    border-radius: 33554400px;
+}
+.task-priority-text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: 0px;
+}
+.detail {
+    font-family: "DM Mono";
+    font-size: 12px;
+    gap: 8px;
+}
+.detail span:first-child {
+    min-width: 56px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13.33px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #7a7060;
+}
+.task-action {
+    padding-top: 8px;
+    border-top: 1px solid #0f0f140f;
+    gap: 8px;
+}
+.complete-button {
+    width: 100%;
+    gap: 4px;
+    padding: 6px 0;
+    background: #ebe6de;
+    border-radius: 6px;
+}
+.delete.but {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+}
+.createTaskModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hideBox {
+    display: none !important;
+}
+.createTaskDialogBox {
+    background-color: white;
+    width: 500px;
+    /* height: 316px; */
+    gap: 16px;
+    opacity: 1;
+    border-radius: 12px;
+    padding: 24px;
+}
+.createTask-top {
+    justify-content: space-between;
+}
+.createTask-top .task-title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    justify-content: space-between;
+}
+.createTask-top button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #0f0f141f;
+    border-radius: 8px;
+}
+.submitForm {
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.inputField {
+    gap: 6px;
+    width: calc((100% / 2) - 8px);
+    align-self: flex-start;
+}
+.inputField label {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 13.33px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #7a7060;
+}
+.inputField input,
+select {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border-width: 1px;
+    border: 1px solid #0f0f141f;
+}
+select,
+::picker(select) {
+    border: 1px solid gray;
+    border-radius: 8px;
+    appearance: base-select;
+}
+select::picker-icon {
+    content: url("https://img.icons8.com/?size=16&id=85327&format=png&color=000000");
+}
+option {
+    padding: 10px 12px;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 8px;
+    color: #7a7060;
+}
+option:hover {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: #3885f51f;
+    color: black;
+}
+.submitDiv {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}

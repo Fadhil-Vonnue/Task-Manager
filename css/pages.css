@@ -1,0 +1,53 @@
+@media screen and (width<=768px) {
+    header,
+    main,
+    footer {
+        max-width: 668px;
+        padding: 32px 0;
+    }
+    .card {
+        width: calc((100% / 2) - 12px);
+    }
+    .dashboard .dashboard-card {
+        width: calc((100% / 3) - 8px);
+    }
+    .createTaskDialogBox {
+        width: 450px;
+    }
+}
+@media screen and (width<=425px) {
+    header,
+    main,
+    footer {
+        max-width: 350px;
+        padding: 24px 0;
+    }
+    .dashboard .dashboard-card {
+        width: calc((100% / 2) - 6px);
+    }
+    .addTask {
+        align-self: normal;
+        width: 100%;
+    }
+    .task-card {
+        width: 100%;
+    }
+    .page-title {
+        font-size: 32px;
+    }
+    .page-tagline {
+        font-size: 13px;
+    }
+    .inputField {
+        width: 100%;
+    }
+    .createTaskDialogBox {
+        width: 100%;
+    }
+    .createTaskModal {
+        align-items: flex-end;
+    }
+    .task-total {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    gap: 12px;
+}
+header,
+main,
+footer {
+    max-width: 896px;
+    width: 100%;
+    padding: 32px;
+}
+main {
+    padding-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+body {
+    padding: 0 12px;
+}
